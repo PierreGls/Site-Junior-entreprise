@@ -1,0 +1,620 @@
+
+
+*{
+	border : 1px solid rgba(0,0,0,0.3);
+}
+
+
+
+body{
+	margin:0px;
+}
+
+p{
+	font-family: Open Sans, sans-serif;
+	margin:0px;
+}
+
+#barreMenu{
+	background-color:black;
+	opacity:0.9;
+}
+
+/*Logo Artemis*/
+#barreMenu img {	
+	height:45px;
+	margin-left:10px;
+	margin-top:3px;
+}
+
+.buttonMenu{
+	display:inline-block;
+	float:right;
+	margin: 8px;
+	padding: 5px;
+	
+	font-size: 20px;
+	color : white;
+	opacity:0.8;
+}
+
+.buttonMenu:hover{
+	color: CadetBlue;
+	cursor:pointer;
+}
+
+#selected{
+	text-decoration:underline;
+}
+
+
+
+/*--------------------Page d'accueil-----------------*/
+
+#diapoAccueil{
+	height:700px;
+	background-image:url("../img/diapo.jpg");
+	background-position:center bottom;
+}
+
+.bandeAccueil_1{
+	height: 600px;
+	overflow:hidden;
+}
+
+h1{
+	margin:30px 0px 0px 0px;
+	text-align: center;
+	
+	color:rgb(20,20,80) ;
+	font-size:40px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:100;
+	letter-spacing:2px;
+}
+
+.texteAccueil_1{
+	display:inline-block;
+	margin:60px 0px 0px 60px;
+	height:380px;
+	width:40%;
+	
+	text-indent:30px;
+	text-align:justify;
+	font-size:1.2em;
+	color : rgb(20,20,20);
+}
+
+.boutonAccueil{
+	display:inline-block;
+	margin:50px 0px 0px 30%;
+	width:40%;
+	
+	letter-spacing: 2px;
+	text-align:center;
+	font-weight:5px;
+	color:DarkGray;
+	font-size:20px;
+	
+	border: 1px solid Gray;
+}
+
+.boutonAccueil:hover{
+	color:white;
+	background-color:Gray;
+	cursor:pointer;
+}
+
+.imageAccueil_1 {
+	float : right;
+	height : 380px;
+	margin :60px 0px 60px 0px;
+	margin-right : 60px;
+}
+
+.bandeAccueil_2{
+	height: 600px;
+	background-color:Gainsboro;
+	overflow:hidden;
+}
+
+.texteAccueil_2{
+	display:inline-block;
+	float: right;
+	margin:60px 60px 0px 0px;
+	height:380px;
+	width:40%;
+	
+	text-indent:30px;
+	text-align:justify;
+	font-size:1.2em;
+	color : rgb(20,20,20);
+}
+
+
+.imageAccueil_2{
+	float : left;
+	height : 380px;
+	margin:60px 0px 0px 60px;
+}
+
+/*devis*/
+#accueilDevis{
+	background-image:url("../img/diapo.jpg");
+}
+
+#accueilDevis p{
+	display:inline-block;
+	
+	margin:270px 0px 0px 40%;
+	padding:5px;
+	
+	font-size:30px;
+	letter-spacing:3px;
+	color:white;
+	background-color:rgba(25,25,25,0.8);
+	border : 2px solid black;
+}
+
+#accueilDevis p:hover{
+	margin:260px 0px 0px 39%;
+	padding:10px;
+	
+	font-size:32px;
+	
+	cursor:pointer;
+}
+
+/*---------Junior-----------------------------------*/
+
+/*image de début de page*/
+.imageIntro{
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	height:700px;
+}
+
+.imageIntro p{
+	font-size:50px;
+	font-family:Times New Roman;
+	color:white;
+	background-color:black;
+	opacity:0.7;
+	
+	width:30%;
+	text-align:center;
+	margin : auto;
+	margin-top:300px;
+	margin-left:35%;
+	padding:10px;
+}
+
+#imageJunior{
+	background-image:url("../img/imageJunior.jpg");
+}
+
+/*Mot du président*/
+.citation{
+	box-shadow: 4px 4px 4px black ;
+	border:1px solid gray;
+	margin-top:25px;
+}
+
+#imagePresident{
+	border-radius:100%;
+}
+
+/*questions*/
+#junior1{
+	width:49%;
+	display:inline-block;
+}
+#junior2{
+	width:49%;
+	display:inline-block;
+	
+}
+#junior3 span{
+	font-size:25px;
+	font-weight:5px;
+}
+
+#junior3 p{
+	display:inline-block;
+}
+
+
+
+/*portraits équipe*/
+h3{
+	text-align:center;
+	margin-top:40px;
+	
+	color:rgb(60,60,60);
+	font-size:34px;
+}
+
+.personne{
+	display:inline-block;
+	text-align:center;
+}
+
+.personne img{
+	width:100px;
+	height:100px;
+	border-radius:100%;
+	text-align:center;
+}
+
+.personne p{
+	text-align:center;
+	margin-top:20px;
+	
+	color:#787878;
+	font-size:20px;
+}
+
+.personne p+p{
+	color:#4e4e4e;
+	font-size:16px;
+}
+#nbr2 div{
+	width:43%;
+	margin:2%;
+}
+
+#nbr3 div{
+	width:28%;
+	margin:2%;
+}
+
+#nbr4 div{
+	width:22%;
+	margin:1%;
+}
+
+#nbr5 div{
+	width:17%;
+	margin:1%;
+}
+
+
+/*---------Ecole-----------------------------------*/
+
+#imageEcole{
+	background-image:url("../img/imageEcole.jpg");
+}
+
+/*mot du directeur*/
+#imageDirecteur{
+	filter:grayscale(100%);
+}
+
+/*poles*/
+#listePoles{
+	background-color:Gainsboro;
+}
+#listePoles div{
+	display:inline-block;
+	width: 20%;
+	height: 200px;
+	margin:2%;
+	vertical-align:top;
+	text-align:center;
+}
+
+#listePoles p{
+	margin-top:20px;
+	display:none;
+	
+	
+	font-size:22px;
+}
+
+#listePoles img{
+	border-radius:10%;
+	width:100px;
+	height:100px;
+	filter:grayscale(100%);
+}
+
+#bandePole{
+	height:400px;
+}
+
+/*Cours*/
+#bandeCours{
+	height:700px;
+}
+
+#listeMajeures a{
+	text-decoration:none;
+	color: rgb(50,50,50);
+	font-weight:bold;
+}
+
+#listeMajeures li{
+	text-align:center;
+	padding:10px 0px;
+	margin:20px 0px;
+	
+	font-size:18px;
+	border-radius:2px;
+}
+
+#listeMajeures li:hover{
+	background-color:rgba(200,200,200,0.5);
+}
+
+h2{
+	text-align : center;
+}
+
+/*
+#listeMajeures a:active{
+	background-color:lightBlue;
+}
+*/
+
+.ui-tabs-vertical { width: 65em; }
+.ui-tabs-vertical .ui-tabs-nav { padding: .10em .1em .0em .2em; float: left; width: 20em; }
+.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%;  }
+.ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; }
+.ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}
+
+
+/*Map*/
+#mapEcole{
+	width:100%;
+	height:100%;
+}
+
+/*---------Missions-----------------------------------*/
+
+#imageMissions{
+	background-image:url("../img/imageMissions.jpg");
+}
+
+#imageMissions p{
+	width:40%;
+	margin-top:350px;
+	margin-left:45%;
+}
+
+#phraseIntroMission{
+	text-align:center;
+	margin-top:20px;
+	
+	color : Orange;
+	font-size:35px;
+}
+
+#tabsMissions{
+	height:700px;
+}
+
+#tabsMissions li{
+	display: inline-block;
+	
+	font-size:30px;
+	padding:30px 0px;
+	margin:0px 6% 2px 6%;
+	width:20%;
+	text-align:center;
+	vertical-align:top;
+	
+}
+
+#tabsMissions li:hover{
+	border-bottom: 2px solid orange;
+	cursor:pointer;
+	margin-bottom:0px;
+}
+
+#tabsMissions a{
+	text-decoration:none;
+	color:black;
+}
+
+.exemplesMissions{
+	width:90%;
+	margin:auto;
+	
+	text-indent:30px;
+	line-height:1.7em;
+}
+
+.exemplesMissions img{
+	width:20%;
+	margin: 10px 0px 20px 40%;
+}
+
+hr{
+  margin: 50px auto;
+  width: 50%;
+  height: 2px;
+  background-color: #f90;
+  border: none; /*on supprime le style par défaut*/
+}
+
+/*Missions effectuées*/
+.missionsEffectuees{
+	margin : 20px 0px;
+}
+
+.MElogo{
+	display:inline-block;
+	vertical-align:top;
+	width:20%;
+	margin-left:2%;
+	text-align:center;
+}
+
+.MElogo img{
+	width:120px;
+}
+
+.MElogo p {
+	text-align:center;
+	color:rgb(150,150,150);
+	font-style:italic;
+}
+
+.MEsujet{
+	display:inline-block;
+	vertical-align:top;
+	width:50%;
+}
+
+.MEsujet p{
+	text-align:center;
+	font-weight:bold;
+}
+.MEsujet li{
+	list-style:none;
+	
+}
+
+.MEavis{
+	display:inline-block;
+	vertical-align:top;
+	width:26%;
+}
+
+.MEavis p{
+	text-align:center;
+	font-weight:bold;
+}
+
+.MEavis p+p{
+	text-align:justify;
+	font-weight:1;
+	
+	text-indent:20px;
+	color:rgb(55,55,55);
+	padding:5px 10px;
+}
+
+/*---------Devis-----------------------------------*/
+
+#devisExplication,#devisForm{
+	display:inline-block;
+	vertical-align:top;
+	width:49.2%;
+	min-height:700px;
+}
+
+#devisExplication{
+	background-color:darksalmon;
+}
+
+form{
+	padding : 50px;
+	margin:0px;
+}
+
+#devisForm h1{
+	margin-bottom : 40px
+}
+
+#devisForm p{
+	margin : 20px 0px 10px 0px;
+}
+
+#devisForm input{
+	margin:0 auto;
+	height:40px;
+	width:80%;
+	
+	border-radius:3px;
+	box-shadow:2px 2px;
+	padding-left:10px;
+	
+	color:gray;
+	font-size:15px;
+	font-family: Open Sans, sans-serif;
+}
+
+input[name=explication]{
+	text-align:top;
+	vertical-align:top;
+}
+
+/*---------Footer-----------------------------------*/
+
+footer{
+	background-color: rgb(50,50,50);
+	padding-top:10px;
+}
+
+footer p{
+	text-align:center;
+	color:white;
+}
+
+/*Que les div directement fils du footer*/
+footer>div{
+	width : 20%;
+	display:inline-block;
+	vertical-align:top;
+	margin-right:2%;
+	
+}
+
+/* ????????????????????????????????????????????????*/
+.aveccadre{
+	border : 1px solid DarkGray;
+}
+
+.reseauSociaux p{
+	display: inline-block;
+	position : relative;
+	vertical-align : top;
+	margin-top:10px;
+	
+	text-align:center;
+	color:white
+}
+
+.reseauSociaux p:hover{
+	background-color:white;
+	color: rgb(50,50,50);
+}
+
+.reseauSociaux img{
+	height:30px;
+	width:30px;
+	margin: 10px 10px 0px 50px;
+}
+
+.reseauSociaux img:hover{
+	background-color:white;
+}
+
+.titreFooter{
+	color:white;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+#buttonFooter{
+	border : 2px solid white;
+	
+	color:white;
+	font-weight:bold;
+	font-size: 20px;
+	margin-top : 50px;
+}
+
+#buttonFooter:hover{
+	background-color:white;
+	color:rgb(50,50,50);
+	cursor:pointer;
+}
+
+#anchorButtonFooter{
+	text-decoration:none;
+}
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Artemis</title>
+	<link href="../style/style.css" type="text/css" rel="stylesheet">
+
+	
+	<script type="text/javascript" src="../js/jquery-2.0.3.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+
+	<script>
+	$( window ).on( "load", function() {
+		$( "#tabsMissions" ).tabs();
+	});
+	</script>
+	
+	<div id="barreMenu">
+		<img src="../img/logo_artemis.png">
+		<a href="devis.php"><div class="buttonMenu"> Tentez l'expérience </div></a>
+		<div class="buttonMenu" id="selected"> Missions </div>
+		<a href="ecole.html"><div class="buttonMenu"> L'Ecole </div></a>
+		<a href="junior.html"><div class="buttonMenu"> La Junior </div></a>
+		<a href="../index.html"><div class="buttonMenu"> Accueil </div></a>
+	</div>
+	
+	<div class="imageIntro" id="imageMissions">
+		<p>Un large choix de compétences</p>
+	</div>
+	
+	<hr>
+	<p id="phraseIntroMission"> Quelques exemples de missions que vous pouvez nous demandez...</p> 
+	<hr>
+	
+	<div id="tabsMissions">
+		<ul>
+			<li><a href="#tabs-1">Etude de marché</a></li>
+			<li><a href="#tabs-2">Site internet et SGBD</a></li>
+			<li><a href="#tabs-3">Traduction</a></li>
+		</ul>
+		<div class="exemplesMissions" id="tabs-1">
+			<img src="../img/tabsMissions1.jpg">
+			<p>Elément majeur de la démarche marketing, l’étude de marché est un processus destiné à analyser, mesurer et comprendre les tendances de consommation et le fonctionnement du marché sur lequel on souhaite se positionner. En discernant les attentes réelles des potentiels clients ainsi qu’en mesurant les dangers de la concurrence, l’etude de marché permet de s’assurer de la faisabilité commerciale du projet. C’est donc un outil indispensable à l’élaboration de la stratégie marketing de l’entreprise qu’il faut savoir maitriser afin de mener à bien tout projet.</p>
+		</div>
+		<div class="exemplesMissions" id="tabs-2">
+			<p>blabla2</p>
+		</div>
+		<div class="exemplesMissions" id="tabs-3">
+			<p>Blabla3</p>
+		</div>
+	</div>
+	
+	<hr>
+	<p id="phraseIntroMission"> Missions effectuées</p> 
+	<hr>
+	
+	<div class="missionsEffectuees">
+		<div class="MElogo">
+			<img src="../img/logo_artemis.png">
+			<p>Numéro 1 des services JE</p>
+			<p>200 missions effectuées chaque jour</p>
+		</div>
+		
+		<div class="MEsujet">
+			<p>Mission effectuée</p>
+			<ul>
+				<li> Date : </li>
+				<li> Sujet : </li>
+				<li> Budget : </li>
+				<li> Temps : </li>
+			</ul>
+		</div>
+		
+		<div class="MEavis">
+			<p> Avis de l'entreprise <p>
+			<p> Nous somme très heureux de cette collaboration et nous n'hésiterons pas à refaire appel à Artémis si l'occasion se représente</p>
+		</div>
+	</div>
+	<div class="missionsEffectuees">
+		<div class="MElogo">
+			<img src="../img/logo_EQIOM.jpg">
+			<p>Numéro 2 du beton en france</p>
+			<p>Leur site internet ? </p>
+		</div>
+		
+		<div class="MEsujet">
+			<p>Mission effectuée</p>
+			<ul>
+				<li> Date : 20/10/2017</li>
+				<li> Sujet : Création d'une macro VBA sur analyse toxicologique</li>
+				<li> Budget : 2000€</li>
+				<li> Temps : 2 mois</li>
+			</ul>
+		</div>
+		
+		<div class="MEavis">
+			<p> Avis de l'entreprise <p>
+			<p> Nous somme très heureux de cette collaboration et nous n'hésiterons pas à refaire appel à Artémis si l'occasion se représente</p>
+		</div>
+	</div>
+	
+	<hr>
+	
+	<footer>
+		<div> 
+			<img src="../img/logo_artemis.png">
+		</div>
+		<div>
+			<p class="titreFooter">Nous suivre</p>
+			<div class="reseauSociaux">
+				<a href="https://www.facebook.com/Artemis.Junior.Consulting" target="_blank"><img src="../img/iconeFacebook.png">
+				<p> Facebook</p></a>
+			</div>
+			<div class="reseauSociaux">
+				<img src="../img/iconeLinkedin.png">
+				<p>LinkedIn</p>
+			</div>
+		</div>
+		<div> 
+			<p class="titreFooter">Nous contacter</p>
+			<p>Artémis </br></br>Adresse : 263 rue du grand bail, Douai 59500 </br> Numéro de télephone : </br> email : </p>
+		</div>
+		<div>
+			<a href="devis.php" id="anchorButtonFooter"><p id="buttonFooter">Tentez l'expérience !</p></a>
+		</div>
+		
+		<p> Copyright 2018 Artémis. Tous droits réservés </p>
+	</footer>
+</body>
+</html>

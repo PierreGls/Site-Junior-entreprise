@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Artemis</title>
+	<link href="../style/style.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="../js/jquery-2.0.3.min.js"></script>
+	
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+	<style>
+
+	</style>
+</head>
+<body>
+	
+	<script>
+	$( window ).on( "load", function() {
+		
+		//affichage des titres de pôles
+		$("#listePoles div").hover(
+			function(){
+				$(this).find("p").fadeIn(500);
+				$(this).css("background-color","SkyBlue");
+			},
+			function(){
+				$(this).find("p").fadeOut(500);
+				$(this).css("background-color","Gainsboro");
+			}
+		);
+		
+		
+			$( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+			$( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+		
+	});
+	
+	
+	
+	</script>
+
+	<div id="barreMenu">
+		<img src="../img/logo_artemis.png">
+		<a href="devis.php"><div class="buttonMenu"> Tentez l'expérience </div></a>
+		<a href="missions.html"><div class="buttonMenu"> Missions </div></a>
+		<div class="buttonMenu" id="selected"> L'Ecole </div>
+		<a href="junior.html"><div class="buttonMenu"> La Junior </div></a>
+		<a href="../index.html"><div class="buttonMenu"> Accueil </div></a>
+	</div>
+	
+	<div class="imageIntro" id="imageEcole">
+		<p>Une grande école </br> aux multiples talents</p>
+	</div>
+
+	<div class = "bandeAccueil_2"> 
+		<div class="texteAccueil_2">
+			<h1>Le mot du directeur</h1>
+			<p class="citation">En tant que directeur, je suis persuadé que cette Junior Entreprise saura répondre à toutes les attentes des entreprises. C'est un excellent moyen de professionnalisation des élèves et blablabla</p>
+		</div>
+		<img class="imageAccueil_2" id="imageDirecteur" src="../img/directeur.jpg">
+	</div>
+	
+	<div class = "bandeAccueil_1"> 
+		<div class="texteAccueil_1">
+			<h1>Histoire de l'école</h1>
+			<p>L'École nationale supérieure des mines de Douai est une école d'ingénieurs ayant existé entre 1878 et 2017. A cette date, elle fusionne avec Télécom Lille pour créer l’École nationale supérieure Mines-Télécom Lille-Douai.</p>
+		</div>
+		<img class="imageAccueil_1" src="../img/ecolePromo1967.jpg">
+	</div>
+	
+	<div class = "bandeAccueil_2" id="bandePole">
+		<h1>4 pôles de recherche</h1>
+		<div id="listePoles">
+			<div>
+				<img src="../img/poleNumerique.jpg">
+				<p>Numérique</p>
+			</div>
+			<div>
+				<img src="../img/poleEnergie.png">
+				<p>Energie et Environnement</p>
+			</div>
+			<div>
+				<img src="../img/poleMateriaux.png">
+				<p>Matériaux et Structures</p>
+			</div>
+			<div>
+				<img src="../img/poleIndustrie.png">
+				<p>Processus pour l'Industrie et les Services</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class = "bandeAccueil_1" id="bandeCours"> 
+		<h1>Les cours proposés</h1>
+		
+		<div id="tabs">
+			<div id="listeMajeures">
+				<ul>
+					<li><a href="#tabs-1">Génie Civil</a></li>
+					<li><a href="#tabs-2">Génie Energétique</a></li>
+					<li><a href="#tabs-3">Environnement et Industrie</a></li>
+					<li><a href="#tabs-4">Ingénierie Mécanique</a></li>
+					<li><a href="#tabs-5">Ingénierie de la Qualité</a></li>
+					<li><a href="#tabs-6">Ingénierie Informatique</a></li>
+					<li><a href="#tabs-7">Optimisation & Automoatisation des Processus Industriels</a></li>
+					<li><a href="#tabs-8">Technologie des Polymères et Composites</a></li>
+				</ul>
+			</div>
+			<div id="tabs-1">
+				<h2>Génie Civil</h2>
+				<p>Les étudiants en génie civil sont capables de :</p>
+				<ul>
+					<li>Situer le projet de construction et ses acteurs</li>
+					<li>Appréhender le comportement des matériaux</li>
+					<li>Effectuer des calculs d’éléments de construction</li>
+					<li>Appréhender la préparation du projet de construction</li>
+					<li>Mener des études de conception d’ouvrages</li>
+					<li>Intégrer les notions de stabilité et de durabilité dans l’étude des ouvrages et des matériaux</li>
+				</ul>
+			</div>
+			<div id="tabs-2">
+				<h2>Génie Energétique</h2>
+				<p>Le programme se décompose en une partie commune à tous et une spécialisation. Le tronc commun permet de :</p>
+				<ul>
+					<li>Appréhender les problématiques de transferts thermiques</li>
+					<li>Mener des études sur la mécanique des fluides</li>
+					<li>Mettre en œuvre les applications de la combustion</li>
+				</ul>
+				<p>Un approfondissement leur permet de :</p>
+				<ul>
+					<li>Développer ou concevoir des installations de production d'énergie et de transport de fluides,</li>
+					<li>Se positionner sur une utilisation rationnelle de l'énergie,</li>
+					<li>Mettre en place des solutions pour entrer dans le cadre du Grenelle de l'environnement.</li>
+				</ul>
+			</div>
+			<div id="tabs-3">
+				<h2>Environnement et Industrie</h2>
+				<p>Les futurs ingénieurs développent des compétences leurs permettant de :</p>
+				<ul>
+					<li>Analyser la performance environnementale de l'entreprise,</li>
+					<li>Concevoir et mener une politique d'amélioration continue</li>
+					<li>Effectuer les choix techniques appropriés à la maîtrise des impacts environnementaux,</li>
+					<li>Anticiper les contraintes et les enjeux à venir,</li>
+					<li>Connaître l'environnement juridique.</li>
+				</ul>
+			</div>
+			<div id="tabs-4">
+				<h2>Ingénierie Mécanique</h2>
+				<p>Les compétences techniques acquises par les étudiants leur permettent de :</p>
+				<ul>
+					<li>Analyser un besoin, à l'aide d'outils et de méthodes déterminés,</li>
+					<li>Modéliser, concevoir et optimiser un système mécanique,</li>
+					<li>Effectuer les choix techniques liés aux fonctionnalités d’un système mécanique (matériaux, essais...),</li>
+					<li>Maîtriser des outils informatiques de conception et de design,</li>
+					<li>Maîtriser les fondements de la mécanique et les différents comportements des structures,</li>
+				</ul>
+			</div>
+			<div id="tabs-5">
+				<h2>Ingénierie de la Qualité</h2>
+				<p>Les étudiants de cette majeure sont capables de :</p>
+				<ul>
+					<li>Opérer une analyse de l'existant,</li>
+					<li>Concevoir des méthodologies et des procédures,</li>
+					<li>Etre rapidement opérationnels et adaptables aux évolutions de l'entreprise,</li>
+					<li>Animer des équipes de travail,</li>
+					<li>Connaître des référentiels et leur implication pour l'organisme,</li>
+					<li>Maîtriser les outils de la qualité, dont la métrologie, nécessaires à la réalisation de diagnostics, au développement de méthodes et à l’animation d’équipes.</li>
+				</ul>
+			</div>
+			<div id="tabs-6">
+				<h2>Ingénierie Informatique</h2>
+				<p>La formation permet aux étudiants de :</p>
+				<ul>
+					<li>Analyser, concevoir, le déploiement et l'administration des systèmes d'informations,</li>
+					<li>Etudier un problème afin d'identifier les besoins des utilisateurs et de concevoir un logiciel répondant à un cahier des charges,</li>
+					<li>Choisir les langages et outils les plus adéquats aux projets auxquels ils seront confrontés en entreprise,</li>
+					<li>Sites web: PHP, ASP, XSL(T),(X)HTML, CSS, Flash,</li>
+					<li>Réseaux : TCP/IP, architecture des réseaux,</li>
+					<li>Bases de données : SQL, Access, Oracle, PostgreSQL...</li>
+					<li>Applications : C, C++, Java, .NET, OCaml, Pascal, Python, Visual Basic.</li>
+				</ul>
+			</div>
+			<div id="tabs-7">
+				<h2>Optimisation & Automoatisation des Processus Industriels</h2>
+				<p>L’objectif général de cette majeure est de former des ingénieurs ayant des bases solides concernant l’organisation, la gestion et l’automatisation des systèmes de production. La formation proposée donne une culture scientifique pluridisciplinaire appliquée à la Productique, ainsi que des connaissances en matière d’automatisation, d’asservissement et plus généralement sur les aspects liés à la production « intégrée » par ordinateur.</p>
+				<p>En définitive, cette majeure procure un certain nombre d’outils permettant :</p>
+				<ul>
+					<li>à moyens constants, d'améliorer la performance de l'outil de production par le biais d'une optimisation de l'organisation de celui-ci,</li>
+					<li>de doter ces moyens de production de performances accrues en jouant d'une part sur les procédés mis en œuvre et d'autre part sur leur automatisation.</li>
+				</ul>
+				<p>Le contenu équilibré de cette formation entre les aspects « théoriques » et « pratiques » procure une riche palette de compétences très appréciée par les industriels qui emploient les diplômés passés par cette majeure OAPI. Les étudiants de cette majeure sont amenés à développer des capacités de gestion et de management de l’unité de production, à maîtriser les systèmes automatisés et l’informatique industrielle. Enfin, ils sont capables de simuler et de concevoir des processus industriels et d’utiliser des outils d’aides à la décision en contexte industrielle.</p>
+			</div>
+			<div id="tabs-8">
+				<h2>Technologie des Polymères et Composites</h2>
+				<p>Les enseignements dispensés dans la majeure « Technologie des Polymères et Composites » de l'École des Mines de Douai visent à apporter aux futurs ingénieurs un large panel de compétences techniques, organisationnelles, économiques et réglementaires, nécessaires à leur intégration dans le secteur industriel de la plasturgie.</p>
+				<p>L'ingénieur de l'École des Mines de Douai issu du parcours Technologie des Polymères et Composites est un ingénieur généraliste capable d'aborder des problèmes pluridisciplinaires relatifs à la conception, à la fabrication et à l'utilisation de produits et de structures complexes en matières plastiques et matériaux composites avancés.</p>
+				<p>Aussi, outre la maîtrise et le développement des technologies de mise en œuvre, le nécessaire dialogue avec tous les autres intervenants de ce domaine industriel implique l'acquisition de solides connaissances dans les domaines connexes des matériaux polymères et composites, de la qualité, de la gestion des risques notamment environnementaux... le tout dans un contexte normatif, économique et réglementaire.</p>
+			</div>
+		</div>
+		
+		
+	</div>
+	
+	
+	<div class = "bandeAccueil_2">
+		<iframe id="mapEcole" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2544.5027228734366!2d3.0657730996389234!3d50.37582637295793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2cbe3ce7b2f51%3A0xd9c2dd7d5d99fdd0!2sEcole+des+Mines+de+Douai!5e0!3m2!1sfr!2sfr!4v1516038083460" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+	
+	
+	<footer>
+		<div> 
+			<img src="../img/logo_artemis.png">
+		</div>
+		<div>
+			<p class="titreFooter">Nous suivre</p>
+			<div class="reseauSociaux">
+				<a href="https://www.facebook.com/Artemis.Junior.Consulting" target="_blank"><img src="../img/iconeFacebook.png">
+				<p> Facebook</p></a>
+			</div>
+			<div class="reseauSociaux">
+				<img src="../img/iconeLinkedin.png">
+				<p>LinkedIn</p>
+			</div>
+		</div>
+		<div> 
+			<p class="titreFooter">Nous contacter</p>
+			<p>Artémis </br></br>Adresse : 263 rue du grand bail, Douai 59500 </br> Numéro de télephone : </br> email : </p>
+		</div>
+		<div>
+			<a href="devis.php" id="anchorButtonFooter"><p id="buttonFooter">Tentez l'expérience !</p></a>
+		</div>
+		
+		<p> Copyright 2018 Artémis. Tous droits réservés </p>
+	</footer>
+</body>
+</html>
